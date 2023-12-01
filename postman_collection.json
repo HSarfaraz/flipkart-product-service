@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "b9ac3071-b249-4860-a4d7-bd050d1d38ba",
+		"name": "flipkart-product-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27400123"
+	},
+	"item": [
+		{
+			"name": "https://localhost:4000",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4000",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:4000",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:4000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-CzSQYJJ09YKXkVB7AfllDl1oYzA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 11:57:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Flipkart product service"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:4000/products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4000/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:4000/products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:4000/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"87-0+YuP0R2/Jn2UiAR6uH1u20yU6w\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:48:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"cupboard\",\n        \"description\": \"wooden\",\n        \"category\": \"furniiture\",\n        \"price\": \"70000\",\n        \"manufactured\": \"19/3/2003\",\n        \"discount\": \"50%\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:4000/products/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:4000/products/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products",
+						"2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:4000/products/2",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:4000/products/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-asEPfAvz1rjeWQsI+6cs8HpvAjM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:49:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "product od 2 is deleted"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:4000/products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"cupboard\",\r\n   \"description\":\"wooden\",\r\n   \"category\":\"furniiture\",\r\n   \"price\":\"70000\",\r\n   \"manufactured\":\"19/3/2003\",\r\n   \"discount\":\"50%\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:4000/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"cupboard\",\r\n   \"description\":\"wooden\",\r\n   \"category\":\"furniiture\",\r\n   \"price\":\"70000\",\r\n   \"manufactured\":\"19/3/2003\",\r\n   \"discount\":\"50%\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4000/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-H2XW9oX7buyl9yQ1e4h9Y31At6A\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:48:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"cupboard\",\n    \"description\": \"wooden\",\n    \"category\": \"furniiture\",\n    \"price\": \"70000\",\n    \"manufactured\": \"19/3/2003\",\n    \"discount\": \"50%\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:4000/products",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"wardrobe\",\r\n   \"description\":\"wooden\",\r\n   \"category\":\"furniiture\",\r\n   \"price\":\"70000\",\r\n   \"manufactured\":\"19/3/2023\",\r\n   \"discount\":\"50%\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4000/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:4000/products",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"wardrobe\",\r\n   \"description\":\"wooden\",\r\n   \"category\":\"furniiture\",\r\n   \"price\":\"70000\",\r\n   \"manufactured\":\"19/3/2023\",\r\n   \"discount\":\"50%\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4000/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-VsDvYJ5GOs4zHGqoAmmt44T65w4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:51:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"wardrobe\",\n    \"description\": \"wooden\",\n    \"category\": \"furniiture\",\n    \"price\": \"70000\",\n    \"manufactured\": \"19/3/2023\",\n    \"discount\": \"50%\"\n}"
+				}
+			]
+		}
+	]
+}

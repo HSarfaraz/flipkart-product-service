@@ -23,13 +23,12 @@ app.get("/", verifyAPIKey, (req, res) => {
   res.send("Flipkart product service");
 });
 
-app.get("/product", verifyAPIKey, (req, res) => {
+app.get("/products", verifyAPIKey, (req, res) => {
   let sql = "select * from flipkartproductdb.product";
   db.query(sql, (error, data) => {
     if (error) return res.status(500).send(error);
     res.status(200).send(data);
   });
-  res.send("get the product details");
 });
 
 app.put("/products", verifyAPIKey, (req, res) => {
@@ -43,8 +42,6 @@ app.put("/products", verifyAPIKey, (req, res) => {
     if (error) return res.status(500).send(error);
     res.status(201).send(product);
   });
-
-  res.send("modify the product details");
 });
 
 app.post("/products", verifyAPIKey, (req, res) => {
